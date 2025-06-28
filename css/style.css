@@ -1,0 +1,423 @@
+:root {
+  --cor01: #076576;
+  --cor02: #FFFFFF;
+  --cor03: #edecec73;
+  --cor04: #000000;
+  --cor05: #1E1E1E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border-style: 0;
+    background-color:var(--cor05);
+    color: var(--cor02);
+    font-family: Arial, sans-serif;
+}
+
+body p {
+    color: var(--cor03);
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor02);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 20px;
+    box-shadow: 2px 2px 10px var(--cor01);
+}
+
+header nav {
+    margin-right: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cor04);
+    margin: 0 15px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+header nav a:hover {
+    background-color: var(--cor01);
+    color: var(--cor02);
+    font-weight: bold;
+} 
+
+header nav #btn_contato {
+    background-color: var(--cor01);
+    color: var(--cor02);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+header nav #btn_contato:hover {
+      background-color: var(--cor02);
+    color: var(--cor01);
+    font-weight: bold;
+    border: 2px solid var(--cor01);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+main section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: justify;
+    margin: 50px 0;
+}
+
+main #presentacao {
+    margin: auto 60px;
+    width: 50%;
+    
+}
+
+
+main #apresentacao .ola{
+    font-size: 30px;
+   font-weight: bold; 
+   color: var(--cor02);
+}
+
+main #apresentacao .nome{ 
+    font-size: 35px;
+   font-weight: bold; 
+   color: var(--cor01);
+}
+
+main #apresentacao .cargo {
+    font-size: 70px;
+   font-weight: bold;
+   color: var(--cor02);
+}
+
+main #apresentacao .designer {
+    font-size: 70px;
+   font-weight: bold;
+   color: var(--cor02);
+}
+
+main #apresentacao button {
+    padding: 8px 15px;
+    margin-top: 155px ;
+    background-color: var(--cor01);
+    color: var(--cor02);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+main #rede_sociais {
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #rede_sociais img {
+    margin: 0 auto;
+    width: 250px;
+    border-radius: 20px;
+}
+
+main ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+}
+
+main ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+main #div_sobre_mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+
+main #div_sobre_mim #sobre_mim_img {
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+main #div_sobre_mim #sobre_mim_img img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+main #div_sobre_mim #sobre_mim {
+    width: 30%;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+main #sobre_mim {
+    color: var(--cor02);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main #div_sobre_mim #div_bilidades #habilidades img {
+    width: 75px;
+    margin-right: 20px;
+}
+
+main #meus_proj {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+main #meus_proj h2 {
+    margin-bottom: 30px;
+}
+
+main #projetos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+#div_bilidades {
+    margin-top: 30px;
+}
+
+#habilidades {
+    display: flex;
+}
+
+#habilidades p {
+    margin: 5px 15px;
+}
+
+main #projetos .img_projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 0 auto;
+}
+
+main #projetos .img_projetos img {
+    width: 500px;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+main #projetos .img_projetos .btn_projt {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+main #projetos .img_projetos .btn_projt a {
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor01);
+    color: var(--cor02);
+    transition: .3S;
+}
+
+main #projetos .img_projetos .btn_projt a:hover {
+    background-color: var(--cor02);
+    color: var(--cor01);
+    font-weight: bold;
+}
+
+footer {
+    margin: 50px 0;
+    text-align: center;
+}
+
+footer form {
+    margin-top: 40px;
+}
+
+footer form input {
+    width: 250px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+footer form #btn {
+     padding: 4px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    background-color: var(--cor01);
+    color: var(--cor02);
+}
+
+footer form #btn:hover {
+      background-color: var(--cor02);
+    color: var(--cor01);
+    font-weight: bold;
+}
+
+hr {
+    width: 90%;
+    border-color:var(--cor03) ;
+}
+
+@media (max-width: 850px) {
+
+main section {
+    width: 80%;
+    margin: 30px auto;
+}
+
+main #apresentacao .ola {
+    font-size: 15px;
+}
+
+main #apresentacao .nome {
+font-size: 20px;
+}
+
+main #apresentacao .cargo {
+    font-size: 40px;
+}
+
+main #apresentacao .designer {
+    font-size: 40px;
+}
+
+main #rede_sociais img {
+    width: 150px;
+}
+
+main #div_sobre_mim #sobre_mim_img img {
+    width: 250px;
+    height: 250px;
+}
+
+main #div_sobre_mim #div_bilidades #habilidades img {
+    width: 45px;
+}
+    
+}
+
+@media (max-width: 600px) {
+    header nav a {
+        display: none;
+    }
+
+    header nav #btn_contato {
+        display: block;
+    }
+     
+    main #apresentacao {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    main section {
+        margin: 30px auto;
+    }
+
+    main #apresentacao .ola {
+        font-size: 15px;
+    }
+
+    main #apresentacao .nome {
+    font-size: 20px;
+    }
+
+    main #apresentacao .cargo {
+        font-size: 45px;
+    }
+
+    main #apresentacao .designer {
+        font-size: 45px;
+    }
+
+    main #apresentacao button {
+        margin: 30px 0;
+    }
+
+    main #rede_sociais img {
+        border-radius: 50%;
+        width: 300px;
+        height: 350px;
+    }
+
+    main #div_sobre_mim {
+        margin: 10px auto;
+    }
+
+    main #div_sobre_mim #sobre_mim_img img {
+    display: none;
+    }
+
+ 
+
+    main #div_sobre_mim #sobre_mim {
+        width: 85%;
+    }
+
+    main #projetos .img_projetos {
+        width: 350px;
+    }
+
+    main #projetos .img_projetos img {
+        width: 300px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    footer form #btn {
+        margin-top: 20px;
+    }
+}
