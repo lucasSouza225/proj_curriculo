@@ -161,7 +161,16 @@ main ul {
 
 main ul li {
     list-style: none;
-    margin: 5px;
+    margin: 5px 8px;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: var(--cor02);
+}
+
+main ul li a:hover {
+    color: var(--cor01);
 }
 
 main #div_sobre_mim {
