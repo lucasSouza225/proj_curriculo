@@ -128,14 +128,25 @@ main #apresentacao .designer {
    color: var(--cor02);
 }
 
-main #apresentacao button {
+main #apresentacao #div_btn_curriculo {
+    margin-top: 155px;
+}
+
+main #apresentacao #btn_curriculo {
     padding: 8px 15px;
-    margin-top: 155px ;
+
     background-color: var(--cor01);
     color: var(--cor02);
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+main #apresentacao #btn_curriculo:hover {
+    background-color: var(--cor02);
+    color: var(--cor01);
+    font-weight: bold;
 }
 
 main #rede_sociais {
@@ -282,28 +293,24 @@ footer {
     text-align: center;
 }
 
-footer form {
+footer #contato_rede_social {
     margin-top: 40px;
 }
 
-footer form input {
-    width: 250px;
-    padding: 4px 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 5px;
-}
 
-footer form #btn {
-     padding: 4px 15px;
+
+footer #contato_rede_social a {
+    text-decoration: none;
+     padding: 8px 15px;
     border-radius: 5px;
     border: none;
-    margin-left: 5px;
+    margin: 0 8px;
     background-color: var(--cor01);
     color: var(--cor02);
+    transition: .3s;
 }
 
-footer form #btn:hover {
+footer #contato_rede_social a:hover {
       background-color: var(--cor02);
     color: var(--cor01);
     font-weight: bold;
@@ -386,7 +393,7 @@ main #div_sobre_mim #div_bilidades #habilidades img {
         font-size: 45px;
     }
 
-    main #apresentacao button {
+   main #apresentacao #div_btn_curriculo {
         margin: 30px 0;
     }
 
