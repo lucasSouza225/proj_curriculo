@@ -252,16 +252,26 @@ main #projetos {
 main #projetos .img_projetos {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between; 
     align-items: center;
-    flex-wrap: wrap;
-    width: 600px;
-    margin: 0 auto;
+    width: 450px; 
+    margin: 10px 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+main #projetos .img_projetos:hover {
+    transform: translateY(-5px); 
 }
 
 main #projetos .img_projetos img {
-    width: 500px;
-    margin: 0 20px;
+    width: 100%; 
+    max-width: 500px;
+    height: auto; 
+    margin: 0 0 20px 0;
     border-radius: 5px;
 }
 
@@ -269,23 +279,24 @@ main #projetos .img_projetos .btn_projt {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 0;
+    margin-top: 20px; 
 }
 
 main #projetos .img_projetos .btn_projt a {
     text-decoration: none;
-    padding: 5px 25px;
+    padding: 10px 25px;
     border-radius: 5px;
     border: none;
     background-color: var(--cor01);
     color: var(--cor02);
-    transition: .3S;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 main #projetos .img_projetos .btn_projt a:hover {
     background-color: var(--cor02);
     color: var(--cor01);
-    font-weight: bold;
+    border: 2px solid var(--cor01);
 }
 
 footer {
