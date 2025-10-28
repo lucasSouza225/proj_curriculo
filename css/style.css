@@ -448,3 +448,15 @@ main #div_sobre_mim #div_bilidades #habilidades img {
         margin-top: 20px;
     }
 }
+
+/* Animações de aparição */
+.fade-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
