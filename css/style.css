@@ -218,7 +218,8 @@ main #sobre_mim {
 
 main #div_sobre_mim #div_bilidades #habilidades img {
     width: 75px;
-    margin-right: 20px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 main #meus_proj {
@@ -243,6 +244,7 @@ main #projetos {
 
 #habilidades {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #habilidades p {
