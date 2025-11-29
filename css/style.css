@@ -236,6 +236,7 @@ main #projetos {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px;
+    gap: 10px;
 }
 
 #div_bilidades {
@@ -251,13 +252,13 @@ main #projetos {
     margin: 5px 15px;
 }
 
-main #projetos .img_projetos {
+main #projetos .card_projetos {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
-    width: 450px; 
-    margin: 10px 15px;
+    width: 400px; 
+    margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.05); 
@@ -265,11 +266,11 @@ main #projetos .img_projetos {
     transition: transform 0.3s ease; 
 }
 
-main #projetos .img_projetos:hover {
+main #projetos .card_projetos:hover {
     transform: translateY(-5px); 
 }
 
-main #projetos .img_projetos img {
+main #projetos .card_projetos img {
     width: 100%; 
     max-width: 500px;
     height: auto; 
@@ -277,14 +278,14 @@ main #projetos .img_projetos img {
     border-radius: 5px;
 }
 
-main #projetos .img_projetos .btn_projt {
+main #projetos .card_projetos .btn_projt {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px; 
 }
 
-main #projetos .img_projetos .btn_projt a {
+main #projetos .card_projetos .btn_projt a {
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 5px;
@@ -295,7 +296,7 @@ main #projetos .img_projetos .btn_projt a {
     transition: all 0.3s ease;
 }
 
-main #projetos .img_projetos .btn_projt a:hover {
+main #projetos .card_projetos .btn_projt a:hover {
     background-color: var(--cor02);
     color: var(--cor01);
     border: 2px solid var(--cor01);
@@ -430,11 +431,11 @@ main #div_sobre_mim #div_bilidades #habilidades img {
         width: 85%;
     }
 
-    main #projetos .img_projetos {
+    main #projetos .card_projetos {
         width: 350px;
     }
 
-    main #projetos .img_projetos img {
+    main #projetos .card_projetos img {
         width: 300px;
     }
 
