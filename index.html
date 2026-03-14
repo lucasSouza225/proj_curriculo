@@ -4,170 +4,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas de Souza Santos</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imagens/favoicon.png" type="image/x-icon">
-
-
+    <title>Lucas de Souza | Dev</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favoicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="imagens/foto02.jpg" alt="logo">
+    <header class="header-glass">
+        <div class="logo">
+            <span class="logo-text">{L}</span>
         </div>
-        <nav>
-            <a href="#apresentacao">Home</a>
-            <a href="#div_sobre_mim">Sobre Mim</a>
-            <a href="#meus_proj">Projetos</a>
-            <a href="#contato" id="btn_contato">Contato</a>
+        <nav class="nav-desktop">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#contato" class="nav-link btn-contato">Contato</a>
         </nav>
+        <button class="menu-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
+
     <main>
-        <!--  Minha apresentação -->
-        <section id="apresentacao">
-            <div>
-                <p>
-                    <span class="ola">Olá, eu sou</span><br>
-                    <span class="nome">Lucas de Souza Santos</span><br>
-                    <span class="cargo">Desenvolvedor</span><br>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge">👋 Bem-vindo ao meu portfólio</span>
+                <h1 class="glitch-text">
+                    Lucas de Souza Santos<br>
+                    <span></span>
+                </h1>
+                <p class="hero-description">
+                    Transformo linhas de código em experiências digitais memoráveis.
+                    Especializado em criar soluções completas do front ao back-end.
                 </p>
-                <div id="div_btn_curriculo">
-                    <a href="Lucas de Souza Santots.pdf" id="btn_curriculo" target="_blank">Meu Curriculo
-                    </a>
+                <div class="hero-cta">
+                    <a href="./LUCAS DE SOUZA SANTOS.pdf" class="btn-primary" target="_blank">Meu curriculo</a>
+                    <a href="#contato" class="btn-outline">Vamos conversar</a>
+                </div>
+                <div class="tech-stack">
+                    <img src="./img/net.png" alt="Asp." class="tech-icon">
+                    <img src="./img/react.png" alt="React" class="tech-icon">
+                    <img src="./img/node.png" alt="Node" class="tech-icon">
+                    <img src="./img/c.png" alt="C#" class="tech-icon">
+                    <img src="./img/banco.png" alt="Banco de Dados" class="tech-icon">
                 </div>
             </div>
-
+            <div class="hero-image">
+                <div class="profile-frame">
+                    <img src="./img/foto02.jpg" alt="Lucas Souza">
+                    <div class="status-online"></div>
+                </div>
             </div>
-            <!-- Redes Sociais -->
-            <div id="rede_sociais">
-                <img src="imagens/foto01.jpg" alt="imagem01">
-                <ul>
-                    <li>
-                        <a href="https://github.com/lucasSouza225" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/lucassouza7927/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/lucas-de-santos-b1a435199/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
         </section>
-        <section id="div_sobre_mim" class="fade-in">
-            <div id="sobre_mim_img">
-                <img src="imagens/foto02.jpg" alt="imagem002">
-            </div>
-            <div id="sobre_mim">
-                <div>
-                    <h2>Sobre Mim</h2>
-                    <p>
-                        Sou desenvolvedor front-end, apaixonado por transformar ideias em interfaces funcionais e
-                        intuitivas. Domino tecnologias como HTML, CSS, JavaScript , e utilizo boas práticas de
-                        UX/UI design para criar experiências digitais eficientes e responsivas.
-                        Minhas habilidades me permitem acompanhar todo o processo — da concepção até a implementação —
-                        ajudando você a tirar sua ideia do papel e colocá-la em prática com qualidade e performance.
-                    </p>
-                </div>
-                <div id="div_bilidades">
-                    <h3>Conhecimentos</h3>
-                    <div id="habilidades" class="fade-in">
-                        <img src="imagens/html.png" alt="icon html" title="HTML">
-                        <img src="imagens/css.png" alt="icon css" title="CSS">
-                        <img src="imagens/js.png" alt="icon js" title="JavaScript">
-                        <img src="imagens/bootstrap.png" alt="icon bootstrap" title="Bootstrap">
-                        <img src="imagens/sass.png" alt="icon sass" title="Sass">
-                        <img src="imagens/figma.png" alt="icon figma" title="Figma">
-                        <img src="imagens/banco.png" alt="icon banco de dados" title="Banco de Dados">
-                        <img src="imagens/net.png" alt="icon Asp.Net " title="Asp.Net">
-                    </div>
-                </div>
-            </div>
-            <!-- Projetos -->
-        </section>
-        <section id="meus_proj" class="fade-in">
-            <h2>Meus Projetos</h2>
-            <div id="projetos">
-                <div class="card_projetos">
-                    <img src="imagens/carrinho.png" alt="projeto">
-                    <p>Depois de muito estudo, testes e algumas dores de cabeça 😅, finalizei meu projeto de carrinho de
-                        compras funcional usando apenas HTML, CSS e JavaScript puro!
-                        Nesse processo:
-                        Tive vários desafios com o DOM, eventos e a lógica do carrinho (adicionar, remover, atualizar).
-                        Aprendi muito mais sobre JavaScript, principalmente com arrays e objetos.
-                        Usei IA como apoio para tirar dúvidas e entender melhor algumas partes.
-                        O foco foi sempre aprender na prática e evoluir a cada etapa 💡</p>
-                    <div class="btn_projt">
-                        <a href="https://lucassouza225.github.io/lista_prod_carrinho/" target="_blank">Visualizar</a>
-                        <a href="https://github.com/lucasSouza225/lista_prod_carrinho" target="_blank">Codigo</a>
-                    </div>
-                </div>
-                <div class="card_projetos">
-                    <img src="imagens/podedex.png" alt="projeto">
-                    <p>Criamos uma Pokedex com .NET 8, usando MVC e MySQL para armazenamento de dados. O foco foi
-                        desenvolver páginas web dinâmicas, aplicando boas práticas de Programação Orientada a Objetos e
-                        desenvolvimento moderno.</p>
-                    <div class="btn_projt">
-                        <a href="https://www.linkedin.com/posts/lucas-de-santos-b1a435199_desenvolvimentoweb-dotnet-mvc-activity-7373042623625887744-o_uK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6EGwYBPWf9cjeCWdBjCyL1y5wnh9XYdNU"
-                            target="_blank">Visualizar</a>
-                        <a href="https://github.com/lucasSouza225/Pokedex" target="_blank">Codigo</a>
-                    </div>
-                </div>
-                <div class="card_projetos">
-                    <img src="imagens/blackCoffe.png" alt="projeto">
-                    <p> Eu e meu grupo desenvolvemos um sistema completo com frontend + backend, e foi uma experiência
-                        incrível.
-                        💻 Backend: feito em .NET, com API REST conectada ao MySQL.
-                        🎨 Frontend: focado em usabilidade e integração direta com a API.
-                        Aprendi muito durante o processo e cada projeto me deixa ainda mais preparado para os próximos
-                        desafios! 🔥</p>
-                    <div class="btn_projt">
-                        <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7400573727031050240/" target="_blank">Visualizar</a>
-                        <a href="https://github.com/lucasSouza225/BlackCoffe" target="_blank">Codigo</a>
-                    </div>
-                </div>
-        </section>
-        <hr>
-        <footer id="contato">
-            <h2>Para entrar em contato comigo</h2>
-            <p>entre em contato e vamos tirar seu projeto do papel!</p>
 
-            <div id="contato_rede_social">
-                <a href="https://wa.me/5514996168417" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                        <path
-                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                    </svg> Whatsapp</a>
-                <a href="https://www.linkedin.com/in/lucas-de-santos-b1a435199/" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                    </svg> Linkedin</a>
+        <!-- Skills Section com visual impactante -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>Tecnologias que domino</h2>
+                <p>Ferramentas que uso para dar vida aos projetos</p>
             </div>
 
-        </footer>
+            <div class="skills-3d-container">
+                <!-- Frontend Card 3D -->
+                <div class="skill-card-3d" onclick="rotateCard(this)">
+                    <div class="card-face card-front frontend">
+                        <div class="card-icon">⚛️</div>
+                        <h3>Front-end</h3>
+                        <span class="explore-hint">Clique para explorar</span>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="tech-grid">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Tailwindcss</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Card 3D -->
+                <div class="skill-card-3d" onclick="rotateCard(this)">
+                    <div class="card-face card-front backend">
+                        <div class="card-icon">⚙️</div>
+                        <h3>Back-end</h3>
+                        <span class="explore-hint">Clique para explorar</span>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="tech-grid">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">APIs REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Card 3D -->
+                <div class="skill-card-3d" onclick="rotateCard(this)">
+                    <div class="card-face card-front database">
+                        <div class="card-icon">🗄️</div>
+                        <h3>Banco de Dados</h3>
+                        <span class="explore-hint">Clique para explorar</span>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="tech-grid">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projects">
+            <div class="section-header">
+                <span class="section-subtitle">trabalhos</span>
+                <h2>Projetos em destaque</h2>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="frontend">Front-end</button>
+                <button class="filter-btn" data-filter="backend">Back-end</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="./img/carrinho.jpg" alt="Carrinho de Compras">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/lucasSouza225/lista_prod_carrinho" class="project-link"
+                                    target="_blank">🔗</a>
+                                <a href="https://lucassouza225.github.io/lista_prod_carrinho/" class="project-link"
+                                    target="_blank">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Carrinho de Compras</h3>
+                        <p>Carrinho funcional com JS puro e localStorage</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="./img/blackcoffe.jpg" alt="Black Coffee">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/lucasSouza225/BlackCoffe" class="project-link"
+                                    target="_blank">🔗</a>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7400573727031050240/"
+                                    class="project-link" target="_blank">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Black Coffee</h3>
+                        <p>Sistema completo com .NET + MySQL</p>
+                        <div class="project-tech">
+                            <span>.NET</span>
+                            <span>MySQL</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="./img/pokedex.jpg" alt="Pokedex">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/lucasSouza225/Pokedex" class="project-link"
+                                    target="_blank">🔗</a>
+                                <a href="https://www.linkedin.com/posts/lucas-de-santos-b1a435199_desenvolvimentoweb-dotnet-mvc-activity-7373042623625887744-o_uK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6EGwYBPWf9cjeCWdBjCyL1y5wnh9XYdNU"
+                                    class="project-link" target="_blank">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pokedex API</h3>
+                        <p>API REST com ASP.NET e Entity Framework</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>API</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato com formulário integrado -->
+        <section id="contato" class="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Vamos criar algo incrível?</h2>
+                    <p>Estou disponível para novos projetos e oportunidades</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <a href="mailto:lucas78957@email.com">lucas@email.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>Igaraçu do Tiete - SP</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/lucasSouza225" class="social-link" target="_blank">GitHub</a>
+                        <a href="www.linkedin.com/in/lucas-de-santos-b1a435199" class="social-link"
+                            target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/lucassouza7927/" class="social-link"
+                            target="_blank">Instagram</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem" rows="5"></textarea>
+                    <button type="submit" class="btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <script src="js/script.js"></script>
+
+    <footer>
+        <p>© 2026 Lucas de Souza - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
