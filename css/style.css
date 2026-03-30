@@ -97,6 +97,62 @@ body {
     padding: 0;
     z-index: 10;
 }
+/* Ícones SVG profissionais - estilos adicionais */
+      .professional-icon {
+        width: 48px;
+        height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .professional-icon.small {
+        width: 24px;
+        height: 24px;
+      }
+
+      .card-icon svg {
+        width: 48px;
+        height: 48px;
+      }
+
+      .project-link svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .social-link svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+
+      .badge svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+
+      .tech-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+
+      .contact-item svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      .filter-btn svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
 
 .menu-mobile span {
     width: 100%;
