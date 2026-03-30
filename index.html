@@ -1,244 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas de Souza | Dev</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/favoicon.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favoicon.png" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <header class="header-glass">
-        <div class="logo">
-            <span class="logo-text">{L}</span>
-        </div>
-        <nav class="nav-desktop">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projetos" class="nav-link">Projetos</a>
-            <a href="#contato" class="nav-link btn-contato">Contato</a>
-        </nav>
-        <button class="menu-mobile">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+      <div class="logo">
+        <span class="logo-text">{L}</span>
+      </div>
+      <nav class="nav-desktop">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#contato" class="nav-link btn-contato">Contato</a>
+      </nav>
+      <button class="menu-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <span class="badge">👋 Bem-vindo ao meu portfólio</span>
-                <h1 class="glitch-text">
-                    Lucas de Souza Santos<br>
-                    <span></span>
-                </h1>
-                <p class="hero-description">
-                    Transformo linhas de código em experiências digitais memoráveis.
-                    Especializado em criar soluções completas do front ao back-end.
-                </p>
-                <div class="hero-cta">
-                    <a href="./LUCAS DE SOUZA SANTOS.pdf" class="btn-primary" target="_blank">Meu curriculo</a>
-                    <a href="#contato" class="btn-outline">Vamos conversar</a>
-                </div>
-                <div class="tech-stack">
-                    <img src="./img/net.png" alt="Asp." class="tech-icon">
-                    <img src="./img/react.png" alt="React" class="tech-icon">
-                    <img src="./img/node.png" alt="Node" class="tech-icon">
-                    <img src="./img/c.png" alt="C#" class="tech-icon">
-                    <img src="./img/banco.png" alt="Banco de Dados" class="tech-icon">
-                </div>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <span class="badge">👋 Bem-vindo ao meu portfólio</span>
+          <h1 class="glitch-text">
+            Lucas de Souza Santos<br />
+            <span></span>
+          </h1>
+          <p class="hero-description">
+            Transformo linhas de código em experiências digitais memoráveis.
+            Especializado em criar soluções completas do front ao back-end.
+          </p>
+          <div class="hero-cta">
+            <a
+              href="./LUCAS DE SOUZA SANTOS.pdf"
+              class="btn-primary"
+              target="_blank"
+              >Meu curriculo</a
+            >
+            <a href="#contato" class="btn-outline">Vamos conversar</a>
+          </div>
+          <div class="tech-stack">
+            <img src="./img/net.png" alt="Asp." class="tech-icon" />
+            <img src="./img/react.png" alt="React" class="tech-icon" />
+            <img src="./img/node.png" alt="Node" class="tech-icon" />
+            <img src="./img/c.png" alt="C#" class="tech-icon" />
+            <img src="./img/banco.png" alt="Banco de Dados" class="tech-icon" />
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-frame">
+            <img src="./img/foto02.jpg" alt="Lucas Souza" />
+            <div class="status-online"></div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="section-header">
+          <h2>Tecnologias que domino</h2>
+          <p>Ferramentas que uso para dar vida aos projetos</p>
+        </div>
+
+        <div class="skills-3d-container">
+          <div class="skill-card-3d" onclick="rotateCard(this)">
+            <div class="card-face card-front frontend">
+              <div class="card-icon">⚛️</div>
+              <h3>Front-end</h3>
+              <span class="explore-hint">Clique para explorar</span>
             </div>
-            <div class="hero-image">
-                <div class="profile-frame">
-                    <img src="./img/foto02.jpg" alt="Lucas Souza">
-                    <div class="status-online"></div>
-                </div>
+            <div class="card-face card-back">
+              <div class="tech-grid">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Tailwindcss</span>
+              </div>
             </div>
-        </section>
-        <section id="skills" class="skills">
-            <div class="section-header">
-                <h2>Tecnologias que domino</h2>
-                <p>Ferramentas que uso para dar vida aos projetos</p>
+          </div>
+
+          <div class="skill-card-3d" onclick="rotateCard(this)">
+            <div class="card-face card-front backend">
+              <div class="card-icon">⚙️</div>
+              <h3>Back-end</h3>
+              <span class="explore-hint">Clique para explorar</span>
             </div>
-
-            <div class="skills-3d-container">
-                <div class="skill-card-3d" onclick="rotateCard(this)">
-                    <div class="card-face card-front frontend">
-                        <div class="card-icon">⚛️</div>
-                        <h3>Front-end</h3>
-                        <span class="explore-hint">Clique para explorar</span>
-                    </div>
-                    <div class="card-face card-back">
-                        <div class="tech-grid">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Bootstrap</span>
-                            <span class="tech-tag">Tailwindcss</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-card-3d" onclick="rotateCard(this)">
-                    <div class="card-face card-front backend">
-                        <div class="card-icon">⚙️</div>
-                        <h3>Back-end</h3>
-                        <span class="explore-hint">Clique para explorar</span>
-                    </div>
-                    <div class="card-face card-back">
-                        <div class="tech-grid">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">ASP.NET</span>
-                            <span class="tech-tag">APIs REST</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-card-3d" onclick="rotateCard(this)">
-                    <div class="card-face card-front database">
-                        <div class="card-icon">🗄️</div>
-                        <h3>Banco de Dados</h3>
-                        <span class="explore-hint">Clique para explorar</span>
-                    </div>
-                    <div class="card-face card-back">
-                        <div class="tech-grid">
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-face card-back">
+              <div class="tech-grid">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">ASP.NET</span>
+                <span class="tech-tag">APIs REST</span>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section id="projetos" class="projects">
-            <div class="section-header">
-                <span class="section-subtitle">trabalhos</span>
-                <h2>Projetos em destaque</h2>
+          <div class="skill-card-3d" onclick="rotateCard(this)">
+            <div class="card-face card-front database">
+              <div class="card-icon">🗄️</div>
+              <h3>Banco de Dados</h3>
+              <span class="explore-hint">Clique para explorar</span>
             </div>
-
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="frontend">Front-end</button>
-                <button class="filter-btn" data-filter="backend">Back-end</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <div class="card-face card-back">
+              <div class="tech-grid">
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="projects-grid">
-                <!-- Projeto 1 -->
-                <div class="project-card" data-category="frontend">
-                    <div class="project-image">
-                        <img src="./img/carrinho.jpg" alt="Carrinho de Compras">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/lucasSouza225/lista_prod_carrinho" class="project-link"
-                                    target="_blank">🔗</a>
-                                <a href="https://lucassouza225.github.io/lista_prod_carrinho/" class="project-link"
-                                    target="_blank">💻</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Carrinho de Compras</h3>
-                        <p>Carrinho funcional com JS puro e localStorage</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                        </div>
-                    </div>
-                </div>
+      <section id="projetos" class="projects">
+        <div class="section-header">
+          <span class="section-subtitle">trabalhos</span>
+          <h2>Projetos em destaque</h2>
+        </div>
 
-                <!-- Projeto 2 -->
-                <div class="project-card" data-category="fullstack">
-                    <div class="project-image">
-                        <img src="./img/blackcoffe.jpg" alt="Black Coffee">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/lucasSouza225/BlackCoffe" class="project-link"
-                                    target="_blank">🔗</a>
-                                <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7400573727031050240/"
-                                    class="project-link" target="_blank">💻</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Black Coffee</h3>
-                        <p>Sistema completo com .NET + MySQL</p>
-                        <div class="project-tech">
-                            <span>.NET</span>
-                            <span>MySQL</span>
-                            <span>API</span>
-                        </div>
-                    </div>
-                </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="frontend">Front-end</button>
+          <button class="filter-btn" data-filter="backend">Back-end</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
 
-                <!-- Projeto 3 -->
-                <div class="project-card" data-category="backend">
-                    <div class="project-image">
-                        <img src="./img/pokedex.jpg" alt="Pokedex">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/lucasSouza225/Pokedex" class="project-link"
-                                    target="_blank">🔗</a>
-                                <a href="https://www.linkedin.com/posts/lucas-de-santos-b1a435199_desenvolvimentoweb-dotnet-mvc-activity-7373042623625887744-o_uK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6EGwYBPWf9cjeCWdBjCyL1y5wnh9XYdNU"
-                                    class="project-link" target="_blank">💻</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Pokedex API</h3>
-                        <p>API REST com ASP.NET e Entity Framework</p>
-                        <div class="project-tech">
-                            <span>C#</span>
-                            <span>API</span>
-                            <span>SQL</span>
-                        </div>
-                    </div>
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image">
+              <img src="./img/barraBambu.jpg" alt="Barra Bambu" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/lucasSouza225/lista_prod_carrinho"
+                    class="project-link"
+                    target="_blank"
+                    >🔗</a
+                  >
+                  <a
+                    href="https://lucassouza225.github.io/lista_prod_carrinho/"
+                    class="project-link"
+                    target="_blank"
+                    >💻</a
+                  >
                 </div>
+              </div>
             </div>
-        </section>
-
-        <section id="contato" class="contact">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Vamos criar algo incrível?</h2>
-                    <p>Estou disponível para novos projetos e oportunidades</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <a href="mailto:lucas78957@email.com">lucas78957@email.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <span>Igaraçu do Tiete - SP</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/lucasSouza225" class="social-link" target="_blank">GitHub</a>
-                        <a href="www.linkedin.com/in/lucas-de-santos-b1a435199" class="social-link"
-                            target="_blank">LinkedIn</a>
-                        <a href="https://www.instagram.com/lucassouza7927/" class="social-link"
-                            target="_blank">Instagram</a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu email" required>
-                    <textarea placeholder="Sua mensagem" rows="5"></textarea>
-                    <button type="submit" class="btn-primary">Enviar mensagem</button>
-                </form>
+            <div class="project-info">
+              <h3>Restaurante Barra Bambu (Ainda não Terminado)</h3>
+              <p>
+                Desenvolvido com tecnologias modernas, utilizando React no
+                frontend e Node.js com MongoDB no backend, o projeto segue boas
+                práticas de organização, segurança e escalabilidade, incluindo
+                criptografia de senhas e proteção de rotas. Como resultado,
+                trata-se de uma solução robusta, funcional e pronta para ser
+                utilizada em ambiente real de produção.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Tailwind </span>
+                <span>Node JS</span>
+                <span>MongoDB</span>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image">
+              <img src="./img/blackcoffe.jpg" alt="Black Coffee" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/lucasSouza225/BlackCoffe"
+                    class="project-link"
+                    target="_blank"
+                    >🔗</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7400573727031050240/"
+                    class="project-link"
+                    target="_blank"
+                    >💻</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Black Coffee</h3>
+              <p>
+                Backend: feito em .NET, com API REST conectada ao MySQL.
+                Frontend: focado em usabilidade e integração direta com a API.
+                Aprendi muito durante o processo e cada projeto me deixa ainda
+                mais preparado para os próximos desafios!
+              </p>
+              <div class="project-tech">
+                <span>.NET</span>
+                <span>MySQL</span>
+                <span>API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="project-card" data-category="backend">
+            <div class="project-image">
+              <img src="./img/pokedex.jpg" alt="Pokedex" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/lucasSouza225/Pokedex"
+                    class="project-link"
+                    target="_blank"
+                    >🔗</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/posts/lucas-de-santos-b1a435199_desenvolvimentoweb-dotnet-mvc-activity-7373042623625887744-o_uK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6EGwYBPWf9cjeCWdBjCyL1y5wnh9XYdNU"
+                    class="project-link"
+                    target="_blank"
+                    >💻</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Pokedex API</h3>
+              <p>
+                Criamos uma Pokedex com .NET 8, usando MVC e MySQL para
+                armazenamento de dados. O foco foi desenvolver páginas web
+                dinâmicas, aplicando boas práticas de Programação Orientada a
+                Objetos e desenvolvimento moderno. Foi uma ótima oportunidade de
+                aplicar meus conhecimentos e evoluir na prática!
+              </p>
+              <div class="project-tech">
+                <span>C#</span>
+                <span>API</span>
+                <span>SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Vamos criar algo incrível?</h2>
+            <p>Estou disponível para novos projetos e oportunidades</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <a href="mailto:lucas78957@email.com">lucas78957@email.com</a>
+              </div>
+              <div class="contact-item">
+                <span>Igaraçu do Tiete - SP</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/lucasSouza225"
+                class="social-link"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="www.linkedin.com/in/lucas-de-santos-b1a435199"
+                class="social-link"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a
+                href="https://www.instagram.com/lucassouza7927/"
+                class="social-link"
+                target="_blank"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Seu nome" required />
+            <input type="email" placeholder="Seu email" required />
+            <textarea placeholder="Sua mensagem" rows="5"></textarea>
+            <button type="submit" class="btn-primary">Enviar mensagem</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 Lucas de Souza - Todos os direitos reservados</p>
+      <p>© 2026 Lucas de Souza - Todos os direitos reservados</p>
     </footer>
 
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
